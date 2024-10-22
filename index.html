@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Product preview card component</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Background Container-->
+    <div class="flex items-center justify-center h-screen bg-[#f8ece4]">
+      <div class="p-2 mx-6">
+        <div class="flex flex-col md:flex-row">
+          <!-- Mobile view image -->
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Mobile View"
+            class="block lg:hidden rounded-t-lg"
+          />
+
+          <!-- Desktop view image -->
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="Desktop View"
+            class="hidden lg:block"
+          />
+          <!--Content-->
+          <div class="p-6 bg-white rounded-b-xl">
+            <h3 class="text-slate-300 tracking-widest">PERFUME</h3>
+            <h1 class="font-bold text-4xl pb-6 mr-6">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p class="pb-4 text-slate-400 text-base">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="flex space-x-8 pb-4">
+              <h3 class="font-bold text-3xl text-[#3c846c]">$149.99</h3>
+              <p class="line-through text-slate-400">$169.99</p>
+            </div>
+            <button
+              class="rounded-md bg-[#3c846c] px-5 py-3 w-full text-white font-bold"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <!--card-->
+      </div>
+    </div>
+    <div class="flex space-x-4">
+      <p>Challenge by:</p>
+      <a href="https://frontendmentor.io">frontendmentor</a>
+      <p>Coded by:</p>
+      <a href="https://github.com/sule12">Sule Bello</a>
+    </div>
+  </body>
+</html>
